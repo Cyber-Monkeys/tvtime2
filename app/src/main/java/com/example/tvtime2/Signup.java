@@ -52,6 +52,9 @@ public class Signup extends AppCompatActivity {
         startActivity(new Intent(this, MainActivity.class));
     }
 
+    public void goToHome(View view){
+        startActivity(new Intent(this, ShowsWatchListDefaultPage.class));
+    }
 
     //Timer for auto-image slider
     class MyTimer extends TimerTask{
