@@ -44,7 +44,7 @@
         android:layout_width="250dp"
         android:layout_height="45dp"
         android:layout_marginStart="82dp"
-        android:layout_marginTop="178dp"
+        android:layout_marginTop="176dp"
         android:background="@drawable/input_field"
         android:drawableLeft="@drawable/ic_person_grey_24dp"
         android:drawablePadding="10dp"
@@ -53,6 +53,8 @@
         android:inputType="textNoSuggestions"
         android:paddingLeft="10dp"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
