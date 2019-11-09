@@ -19,7 +19,7 @@ public class Login extends AppCompatActivity {
         startActivity(new Intent(Login.this, MainActivity.class));
     }
 
-//    public void goTo(View view){
-//        startActivity(new Intent(MainActivity.this, Login.class));
-//    }
+    public void goToHomePage(View view){
+        startActivity(new Intent(Login.this, ShowsWatchListDefaultPage.class));
+    }
 }
