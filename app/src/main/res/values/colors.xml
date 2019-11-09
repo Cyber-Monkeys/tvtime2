@@ -5,4 +5,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="white">#ffffff</color>
     <color name="grey_tv_time_bckgrnd">#545454</color>
+    <color name="hintColor" >#FBD737</color>
+    <color name="header_unselected">#7A7A7A</color>
 </resources>
