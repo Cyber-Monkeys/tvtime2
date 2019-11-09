@@ -44,14 +44,14 @@
         android:layout_width="250dp"
         android:layout_height="45dp"
         android:layout_marginStart="82dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="178dp"
         android:background="@drawable/input_field"
         android:drawableLeft="@drawable/ic_person_grey_24dp"
-        android:paddingLeft="10dp"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Username or email"
         android:inputType="textNoSuggestions"
+        android:paddingLeft="10dp"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
@@ -61,13 +61,14 @@
         android:layout_width="250dp"
         android:layout_height="45dp"
         android:background="@drawable/input_field"
-        android:ems="10"
         android:drawableLeft="@drawable/ic_lock_grey_24dp"
         android:drawablePadding="10dp"
-        android:paddingLeft="10dp"
+        android:ems="10"
         android:hint="Password"
-        android:textSize="14sp"
         android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
@@ -92,6 +93,7 @@
         android:textAllCaps="false"
         android:textColor="#646464"
         android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="@+id/editText2"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -134,7 +136,6 @@
         android:id="@+id/button4"
         android:layout_width="250dp"
         android:layout_height="45dp"
-        android:layout_marginStart="80dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/btn_login_facebook_gradient"
         android:drawableLeft="@drawable/facebook_logo"
@@ -144,7 +145,8 @@
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <TextView
