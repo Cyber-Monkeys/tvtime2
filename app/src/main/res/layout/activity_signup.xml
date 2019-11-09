@@ -2,17 +2,127 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Signup">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:onClick="goBack"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="169dp"
-        android:text="Signup"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="460dp"
+        android:text="Faster setup"
+        android:textColor="#4FE455"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button5"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:paddingLeft="10dp"-->
+<!--        android:drawableLeft="@drawable/facebook_logo"-->
+<!--        android:background="@drawable/btn_login_facebook_gradient"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:text="Sign up with Facebook"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/textView6"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView6"/>-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_login_facebook_gradient"
+        android:onClick="goBack"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:background="@drawable/btn_login_facebook_gradient"
+            android:drawableLeft="@drawable/facebook_logo"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:background="@drawable/btn_side_border_facebook"
+            android:gravity="center"
+            android:text="Sign up with Facebook"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_login_twitter_dark"
+        android:onClick="goBack"
+        android:text="Signup with Twitter"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="119dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="15dp"
+        android:onClick="goBack"
+        android:text="Sign up with email"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/termsAndConditionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/terms_and_condition"
+        android:textColor="#ffffff"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 </androidx.constraintlayout.widget.ConstraintLayout>
