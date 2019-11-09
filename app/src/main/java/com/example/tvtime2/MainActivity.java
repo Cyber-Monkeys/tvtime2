@@ -14,17 +14,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Set background transparency to 90%
+        //Set background transparency to 230/255
         View backgroundimage = findViewById(R.id.background);
         Drawable background = backgroundimage.getBackground();
         background.setAlpha(230);
     }
 
 
+    //Go to signup activity
     public void goToSignUp(View view){
         startActivity(new Intent(MainActivity.this, Signup.class));
     }
 
+    //go to login activity
     public void goToLogIn(View view){
         startActivity(new Intent(MainActivity.this, Login.class));
     }

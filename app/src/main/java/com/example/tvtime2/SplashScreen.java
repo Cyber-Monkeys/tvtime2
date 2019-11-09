@@ -13,6 +13,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Timer on how long the splash screen should take
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
