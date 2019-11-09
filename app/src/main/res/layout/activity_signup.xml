@@ -21,18 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="460dp"
-        android:text="Faster setup"
-        android:textColor="#4FE455"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-<!--    <Button-->
+    <!--    <Button-->
 <!--        android:id="@+id/button5"-->
 <!--        android:layout_width="250dp"-->
 <!--        android:layout_height="45dp"-->
@@ -45,6 +34,19 @@
 <!--        android:text="Sign up with Facebook"-->
 <!--        app:layout_constraintEnd_toEndOf="@+id/textView6"-->
 <!--        app:layout_constraintTop_toBottomOf="@+id/textView6"/>-->
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="480dp"
+        android:text="Faster setup"
+        android:textColor="#4FE455"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -109,7 +111,7 @@
         android:layout_height="22dp"
         android:layout_marginTop="15dp"
         android:onClick="goToHome"
-        android:text="Sign up with email"
+        android:text="@string/sign_with_email"
         android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="@+id/button6"
         app:layout_constraintStart_toStartOf="@+id/button6"

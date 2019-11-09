@@ -12,8 +12,8 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="72dp"
         android:drawableStart="@drawable/resize_logo"
         android:drawableLeft="@drawable/resize_logo"
         android:drawablePadding="5dp"
@@ -22,7 +22,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.012"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,13 +30,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="54dp"
         android:text="Track your shows and movies"
         android:textColor="@color/white"
         android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -49,9 +49,10 @@
         android:background="@drawable/btn_signup_gradient"
         android:onClick="goToSignUp"
         android:text="Get started"
-        android:textSize="17sp"
         android:textAllCaps="false"
         android:textColor="#646464"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
