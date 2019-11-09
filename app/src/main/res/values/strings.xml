@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">tvtime2</string>
+
+    <string name="terms_and_condition">By signing up, you agree to our \nTerms &amp; Privacy Policy</string>
 </resources>
