@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MoviesWatchList"></activity>
+        <activity android:name=".MoviesUpcoming"></activity>
+        <activity android:name=".MoviesWatchList" />
         <activity android:name=".UpcomingHomePage" />
         <activity android:name=".activity_shows_watch_list_unselected_page" />
         <activity android:name=".Login" />

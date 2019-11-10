@@ -13,12 +13,12 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MoviesWatchList extends AppCompatActivity {
+public class MoviesUpcoming extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_movies_watch_list);
+        setContentView(R.layout.activity_movies_upcoming);
         BottomNavigationView bottomNavigationMenu = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationMenu.clearAnimation();
 
@@ -31,38 +31,25 @@ public class MoviesWatchList extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.action_shows:
-                        startActivity(new Intent(MoviesWatchList.this, ShowsWatchListDefaultPage.class));
-                        CustomIntent.customType(MoviesWatchList.this, "fadein-to-fadeout");
+                        startActivity(new Intent(MoviesUpcoming.this, ShowsWatchListDefaultPage.class));
+                        CustomIntent.customType(MoviesUpcoming.this, "fadein-to-fadeout");
                         break;
                     case R.id.action_movies:
-                        Toast.makeText(MoviesWatchList.this, "Movies is clicked", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MoviesUpcoming.this, "Movies  is clicked", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_discover:
-                        startActivity(new Intent(MoviesWatchList.this, Discover.class));
-                        CustomIntent.customType(MoviesWatchList.this, "fadein-to-fadeout");
+                        startActivity(new Intent(MoviesUpcoming.this, Discover.class));
+                        CustomIntent.customType(MoviesUpcoming.this, "fadein-to-fadeout");
                         break;
                     case R.id.action_profile:
-                        startActivity(new Intent(MoviesWatchList.this, Profile.class));
+                        startActivity(new Intent(MoviesUpcoming.this, Profile.class));
                         break;
                 }
                 return true;
             }
         });
     }
-
-    public void goToDiscover(View view){
-        startActivity(new Intent(this, Discover.class));
-        CustomIntent.customType(this, "fadein-to-fadeout");
-    }
-
-    public void goToProfile(View view){
-        startActivity(new Intent(this, Profile.class));
-        CustomIntent.customType(this, "fadein-to-fadeout");
-    }
-    public void menuPageSelected(View V) {
-        startActivity(new Intent(this, ShowsWatchListDefaultPage.class));
-    }
-    public void goToMoviesUpcomingTab(View V) {
-        startActivity(new Intent(this, MoviesUpcoming.class));
+    public void goToMoviesWatchListTab(View V) {
+        startActivity(new Intent(this, MoviesWatchList.class));
     }
 }
