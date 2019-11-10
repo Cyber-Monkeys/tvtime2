@@ -31,6 +31,11 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        int[] images ={
+                R.drawable.joker_background, R.drawable.sherlock_holmes,R.drawable.sherlock_holmes,R.drawable.sherlock_holmes,
+                R.drawable.sherlock_holmes,R.drawable.sherlock_holmes,R.drawable.sherlock_holmes,R.drawable.sherlock_holmes
+        };
+
         question_mark = (TextView) findViewById(R.id.question_mark_text);
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/fa-solid-900.ttf"); //question_mark
         question_mark.setTypeface(font);
@@ -72,6 +77,11 @@ public class Profile extends AppCompatActivity {
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(new HorizontalAdapter(profileInfoArrayList));
+
+        RecyclerView recyclerView2 = (RecyclerView) findViewById(R.id.recyclerView2);
+        recyclerView2.setNestedScrollingEnabled(false);
+        recyclerView2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView2.setAdapter(new HorizontalAdapterImage(images));
 
         BottomNavigationView bottomNavigationMenu = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationMenu.clearAnimation();
