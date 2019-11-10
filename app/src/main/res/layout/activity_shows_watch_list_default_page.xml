@@ -64,371 +64,454 @@
 
     </LinearLayout>
 
-    <ScrollView
+    <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="620dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TopBar">
 
-            <FrameLayout
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="620dp">
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="25">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="100dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" />
 
-                    <LinearLayout
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:orientation="horizontal" />
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="1.5dp">
 
-                    <LinearLayout
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/blueexorcist_foreground" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar5"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="50"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp">
 
-                        <FrameLayout
+                        <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="1.5dp">
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/darkknight_foreground" />
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/blueexorcist_foreground" />
+                        <ProgressBar
+                            android:id="@+id/progressBar6"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="50"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+                    </FrameLayout>
 
-                            <ProgressBar
-                                android:id="@+id/progressBar5"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="50"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/darkknight_foreground" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar6"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="50"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp"
-                            android:paddingLeft="1.5dp"
-                            android:paddingRight="10dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/incredibles_foreground" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar7"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="50"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-                        </FrameLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="1.5dp"
+                        android:paddingRight="10dp">
 
-                        <FrameLayout
+                        <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="1.5dp">
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/incredibles_foreground" />
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_foreground" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar2"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="50"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/batman_superman_foreground" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar3"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="30"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp"
-                            android:paddingLeft="1.5dp"
-                            android:paddingRight="10dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/bladerunner_foreground" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar4"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="100"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-
-                        </FrameLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="1.5dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/joker_foreground" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar8"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="50"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/moonlight_foreground" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar9"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="50"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp"
-                            android:paddingLeft="1.5dp"
-                            android:paddingRight="10dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/myhero_foreground" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar10"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="50"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-                        </FrameLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="170dp"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp"
-                            android:paddingLeft="10dp"
-                            android:paddingRight="1.5dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/avengers_foreground" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar11"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="50"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar12"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="0"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingBottom="6dp"
-                            android:paddingLeft="3dp"
-                            android:paddingRight="10dp">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-                            <ProgressBar
-                                android:id="@+id/progressBar14"
-                                style="?android:attr/progressBarStyleHorizontal"
-                                android:layout_width="109dp"
-                                android:layout_height="4dp"
-                                android:layout_gravity="bottom|center_horizontal"
-                                android:progress="0"
-                                android:progressTint="@color/hintColor"
-                                android:visibility="visible" />
-
-                        </FrameLayout>
-                    </LinearLayout>
-
+                        <ProgressBar
+                            android:id="@+id/progressBar7"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="50"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+                    </FrameLayout>
                 </LinearLayout>
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip2"
-                    style="@style/Widget.MaterialComponents.ChipGroup"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="25dp"
-                    android:text="WATCH NEXT" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
 
-                <info.androidhive.fontawesome.FontTextView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="25dp"
-                    android:background="@color/hintColor"
-                    android:gravity="center"
-                    android:text="@string/fa_th_large_solid"
-                    app:solid_icon="true" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="1.5dp">
 
-            </FrameLayout>
-    </ScrollView>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/assassination_foreground" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar2"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="50"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/batman_superman_foreground" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar3"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="30"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="1.5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/bladerunner_foreground" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar4"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="100"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="1.5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/joker_foreground" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar8"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="50"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/moonlight_foreground" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar9"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="50"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="1.5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/myhero_foreground" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar10"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="50"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="1.5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/avengers_foreground" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBar11"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="50"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2"
+                        style="@style/Widget.MaterialComponents.ChipGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="25dp"
+                        android:text="HAVEN'T STARTED" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="1.5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/assassination_foreground" />
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="50"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/batman_superman_foreground" />
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="30"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="1.5dp"
+                        android:paddingRight="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/bladerunner_foreground" />
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="109dp"
+                            android:layout_height="4dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:progress="100"
+                            android:progressTint="@color/hintColor"
+                            android:visibility="visible" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            style="@style/Widget.MaterialComponents.ChipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="WATCH NEXT" />
+
+        <info.androidhive.fontawesome.FontTextView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/light_grey"
+            android:gravity="center"
+            android:text="@string/fa_th_large_solid"
+            app:solid_icon="true" />
+
+    </FrameLayout>
 
     <LinearLayout
         android:id="@+id/bottomBar"
@@ -471,6 +554,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
+            android:onClick="goToMovies"
             android:orientation="vertical"
             android:weightSum="2">
 
@@ -497,6 +581,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="2"
+            android:onClick="goToDiscover"
             android:orientation="vertical"
             android:weightSum="2">
 
@@ -524,6 +609,7 @@
             android:layout_height="match_parent"
             android:layout_weight="2"
             android:orientation="vertical"
+            android:onClick="goToProfile"
             android:weightSum="2">
 
             <ImageView
