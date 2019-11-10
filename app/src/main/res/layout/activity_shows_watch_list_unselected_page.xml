@@ -43,6 +43,7 @@ tools:context=".activity_shows_watch_list_unselected_page">
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:fontFamily="sans-serif-light"
+                    android:onClick="goToUpcomingTab"
                     android:text="UPCOMING"
                     android:textAlignment="center"
                     android:textColor="#7A7A7A"

@@ -1,19 +1,18 @@
 package com.example.tvtime2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import maes.tech.intentanim.CustomIntent;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import maes.tech.intentanim.CustomIntent;
-
-public class ShowsWatchListDefaultPage extends AppCompatActivity {
+public class UpcomingHomePage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shows_watch_list_default_page);
+        setContentView(R.layout.activity_upcoming_home_page);
     }
 
     public void goToMovies(View view){
@@ -33,7 +32,5 @@ public class ShowsWatchListDefaultPage extends AppCompatActivity {
     public void menuPageUnselected(View V) {
         startActivity(new Intent(this, activity_shows_watch_list_unselected_page.class));
     }
-    public void goToUpcomingTab(View V) {
-        startActivity(new Intent(this, UpcomingHomePage.class));
-    }
+
 }

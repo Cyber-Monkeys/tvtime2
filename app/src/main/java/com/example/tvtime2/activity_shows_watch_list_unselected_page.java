@@ -32,4 +32,7 @@ public class activity_shows_watch_list_unselected_page extends AppCompatActivity
     public void menuPageSelect(View V) {
         startActivity(new Intent(this, ShowsWatchListDefaultPage.class));
     }
+    public void goToUpcomingTab(View V) {
+        startActivity(new Intent(this, UpcomingHomePage.class));
+    }
 }
