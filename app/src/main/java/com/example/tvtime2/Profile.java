@@ -159,4 +159,40 @@ public class Profile extends AppCompatActivity {
     public void goToEditProfile(View view){
         startActivity(new Intent(Profile.this, EditProfile.class));
     }
+
+    public void goToSettings(View view){
+        startActivity(new Intent(Profile.this, Settings.class));
+    }
+
+    public void goToNotifications(View view){
+        startActivity(new Intent(Profile.this, Notification.class));
+    }
+
+    public void goToShowsDefault(View view){
+        startActivity(new Intent(Profile.this, ShowsWatchListDefaultPage.class));
+    }
+
+    public void goToMoviesWatchList(View view){
+        startActivity(new Intent(Profile.this, MoviesWatchList.class));
+    }
+
+    public void goToCustomLists(View view){
+        startActivity(new Intent(Profile.this, CustomerLists.class));
+    }
+
+    public void goToFollowers(View view){
+        startActivity(new Intent(Profile.this, Followers.class));
+    }
+
+    public void goToFollowing(View view){
+        startActivity(new Intent(Profile.this, Following.class));
+    }
+
+    public void goToComments(View view){
+        startActivity(new Intent(Profile.this, Comments.class));
+    }
+
+    public void goToCStats(View view){
+        startActivity(new Intent(Profile.this, Stats.class));
+    }
 }
