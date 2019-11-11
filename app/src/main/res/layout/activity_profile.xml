@@ -108,7 +108,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/profile_button"
                 android:gravity="center"
-                android:onClick="goToShare"
+                android:onClick="goToEditProfile"
                 android:text="EDIT"
                 android:textColor="#363636"
                 android:textSize="13sp"
