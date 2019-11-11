@@ -66,7 +66,7 @@
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/centerlayout"
         android:layout_width="match_parent"
         android:layout_height="620dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,6 +98,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clipChildren="false"
+                        android:focusableInTouchMode="true"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -105,6 +107,9 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:clickable="false"
+                            android:focusable="auto"
+                            android:focusableInTouchMode="true"
                             android:scaleType="centerCrop"
                             app:srcCompat="@mipmap/blueexorcist_foreground" />
 
@@ -124,11 +129,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:clickable="true"
                             android:scaleType="centerCrop"
                             app:srcCompat="@mipmap/darkknight_foreground" />
 
@@ -147,6 +154,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -154,6 +162,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:clickable="true"
                             android:scaleType="centerCrop"
                             app:srcCompat="@mipmap/incredibles_foreground" />
 
@@ -179,6 +188,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -205,6 +215,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -228,6 +239,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -261,6 +273,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -286,6 +299,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -309,6 +323,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -341,6 +356,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -419,6 +435,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -444,6 +461,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -467,6 +485,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:clickable="true"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">

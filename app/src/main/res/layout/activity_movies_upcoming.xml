@@ -35,7 +35,7 @@
                 android:onClick="goToMoviesWatchListTab"
                 android:text="WATCH LIST"
                 android:textAlignment="center"
-                android:textColor="@color/hintColor"
+                android:textColor="#7A7A7A"
                 android:textSize="13sp"
                 android:textStyle="bold" />
 
@@ -44,10 +44,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="5"
+                android:backgroundTint="@color/hintColor"
                 android:fontFamily="sans-serif-light"
                 android:text="UPCOMING"
                 android:textAlignment="center"
-                android:textColor="#7A7A7A"
                 android:textSize="13sp"
                 android:textStyle="bold" />
 
@@ -61,16 +61,49 @@
             android:layout_gravity="bottom"
             android:progress="50"
             android:progressBackgroundTint="#FFFFFF"
-            android:progressTint="@color/hintColor" />
+            android:progressTint="@color/hintColor"
+            android:rotation="180" />
 
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/centerlayout"
         android:layout_width="match_parent"
         android:layout_height="620dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:foregroundTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TopBar"/>
+        app:layout_constraintTop_toBottomOf="@+id/TopBar">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="340dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/upcoming_movies_foreground" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip"
+            style="@style/Widget.MaterialComponents.ChipGroup"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#63D100"
+            android:buttonTint="#00BB7F7F"
+            android:text="DISCOVER MOVIES"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
