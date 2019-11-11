@@ -31,9 +31,24 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        int[] images ={
-                R.drawable.joker_background, R.drawable.sherlock_holmes,R.drawable.sherlock_holmes,R.drawable.sherlock_holmes,
-                R.drawable.sherlock_holmes,R.drawable.sherlock_holmes,R.drawable.sherlock_holmes,R.drawable.sherlock_holmes
+        int[] shows ={
+                R.drawable.house_of_cards_2, R.drawable.altered_carbon,R.drawable.game_of_thrones,R.drawable.vikings,
+                R.drawable.sherlock
+        };
+
+        int[] favoriteShows ={
+                R.drawable.vikings, R.drawable.sherlock,R.drawable.house_of_cards_2,
+                R.drawable.game_of_thrones, R.drawable.altered_carbon, R.drawable.add_to_list
+        };
+
+        int[] movies ={
+                R.drawable.joker, R.drawable.avengers_end_game,R.drawable.sleepless_in_seattle,
+                R.drawable.perks_of_being_a_wallflower, R.drawable.your_name
+        };
+
+        int[] favoriteMovies ={
+                R.drawable.perks_of_being_a_wallflower, R.drawable.your_name,R.drawable.sleepless_in_seattle,
+                R.drawable.joker, R.drawable.avengers_end_game, R.drawable.add_to_list
         };
 
         question_mark = (TextView) findViewById(R.id.question_mark_text);
@@ -81,7 +96,22 @@ public class Profile extends AppCompatActivity {
         RecyclerView recyclerView2 = (RecyclerView) findViewById(R.id.recyclerView2);
         recyclerView2.setNestedScrollingEnabled(false);
         recyclerView2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        recyclerView2.setAdapter(new HorizontalAdapterImage(images));
+        recyclerView2.setAdapter(new HorizontalAdapterImage(shows));
+
+        RecyclerView recyclerView3 = (RecyclerView) findViewById(R.id.recyclerView3);
+        recyclerView3.setNestedScrollingEnabled(false);
+        recyclerView3.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView3.setAdapter(new HorizontalAdapterImage(favoriteShows));
+
+        RecyclerView recyclerView4 = (RecyclerView) findViewById(R.id.recyclerView4);
+        recyclerView4.setNestedScrollingEnabled(false);
+        recyclerView4.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView4.setAdapter(new HorizontalAdapterImage(movies));
+
+        RecyclerView recyclerView5 = (RecyclerView) findViewById(R.id.recyclerView5);
+        recyclerView5.setNestedScrollingEnabled(false);
+        recyclerView5.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView5.setAdapter(new HorizontalAdapterImage(favoriteMovies));
 
         BottomNavigationView bottomNavigationMenu = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationMenu.clearAnimation();
