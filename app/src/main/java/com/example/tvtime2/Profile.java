@@ -155,4 +155,8 @@ public class Profile extends AppCompatActivity {
         i.setType("text/plain");
         startActivity(Intent.createChooser(i, "Share with..."));
     }
+
+    public void goToEditProfile(View view){
+        startActivity(new Intent(Profile.this, EditProfile.class));
+    }
 }
