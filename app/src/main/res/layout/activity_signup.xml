@@ -5,8 +5,13 @@
     android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sherlock_holmes"
     tools:context=".Signup">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:id="@+id/viewFlipper"/>
 
     <TextView
         android:layout_width="wrap_content"
