@@ -17,4 +17,52 @@
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/background_splash_screen</item>
     </style>
+    <style name="Tick_Chip" parent="Widget.MaterialComponents.ChipGroup">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:buttonTint">#F8000000</item>
+        <item name="android:clickable">true</item>
+        <item name="android:text">+</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="chipBackgroundColor">@color/hintColor</item>
+        <item name="chipCornerRadius">4dp</item>
+        <item name="chipEndPadding">0dp</item>
+        <item name="chipIcon">@drawable/ic_done_24px</item>
+        <item name="chipIconSize">15dp</item>
+        <item name="chipStartPadding">4dp</item>
+        <item name="closeIconEndPadding">0dp</item>
+        <item name="closeIconStartPadding">0dp</item>
+    </style>
+    <style name="Plus_Chip" parent="Widget.MaterialComponents.ChipGroup">
+        <item name="android:textSize">5sp</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:buttonTint">#F8000000</item>
+        <item name="android:clickable">true</item>
+        <item name="android:text">+</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipBackgroundColor">#52000000</item>
+        <item name="chipCornerRadius">4dp</item>
+        <item name="chipEndPadding">0dp</item>
+        <item name="chipStartPadding">0dp</item>
+        <item name="chipStrokeColor">@color/hintColor</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="closeIconEndPadding">0dp</item>
+        <item name="closeIconStartPadding">0dp</item>
+        <item name="textStartPadding">6dp</item>
+        <item name="android:textAppearance">@style/chipTextAppearance</item>
+    </style>
+    <style name="chipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>

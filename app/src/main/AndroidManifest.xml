@@ -19,14 +19,15 @@
         <activity android:name=".EditProfile" />
         <activity android:name=".Discover" />
         <activity android:name=".activity_shows_watch_list_unselected_page" />
+        <activity android:name=".ShowsWatchListDefaultPage" />
         <activity android:name=".MoviesUpcoming" />
         <activity android:name=".MoviesWatchList" />
         <activity android:name=".UpcomingHomePage" />
         <activity android:name=".Movies" />
         <activity android:name=".Profile" />
         <activity android:name=".Login" />
-        <activity android:name=".ShowsWatchListDefaultPage" />
         <activity android:name=".Signup" />
+
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashTheme">

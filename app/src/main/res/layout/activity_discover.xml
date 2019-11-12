@@ -5,46 +5,1173 @@
     android:layout_height="match_parent"
     tools:context=".Profile">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="658dp"
+        android:fillViewport="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="92dp"
-                android:text="Discover\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-                app:layout_constraintStart_toStartOf="@+id/button"
-                app:layout_constraintTop_toBottomOf="@+id/button" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                style="@style/Widget.MaterialComponents.ChipGroup"
+                android:layout_width="336dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Search"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#9E9E9E"
+                android:textSize="18sp"
+                android:typeface="normal"
+                app:chipBackgroundColor="#F0F0F0"
+                app:chipCornerRadius="10dp"
+                app:chipEndPadding="0dp"
+                app:chipIcon="@drawable/ic_search_24px"
+                app:chipIconSize="22dp"
+                app:chipIconTint="#9E9E9E"
+                app:chipStartPadding="10dp" />
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="TextView\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
 
-            <TextView
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="80"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Trending movies"
+                    android:textColor="@color/grey_tv_time_bckgrnd"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="TextView\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="SEE ALL"
+                    android:textColor="#257CFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
-    </ScrollView>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    android:scrollbars="none">
+
+                    <FrameLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="4dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:contentPadding="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <com.google.android.material.chip.Chip style="@style/Tick_Chip" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardBackgroundColor="#00FFFFFF"
+                            app:cardCornerRadius="4dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:contentPadding="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <com.google.android.material.chip.Chip style="@style/Plus_Chip" />
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="4dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:contentPadding="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <com.google.android.material.chip.Chip style="@style/Plus_Chip" />
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="8dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:contentPadding="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <com.google.android.material.chip.Chip style="@style/Plus_Chip" />
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="80"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Trending movies"
+                    android:textColor="@color/grey_tv_time_bckgrnd"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="SEE ALL"
+                    android:textColor="#257CFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scrollbarSize="0dp"
+                    android:scrollbars="none">
+
+                    <FrameLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            app:cardCornerRadius="4dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:contentPadding="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <com.google.android.material.chip.Chip style="@style/Tick_Chip" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="4dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:contentPadding="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <com.google.android.material.chip.Chip style="@style/Plus_Chip" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="4dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:contentPadding="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <com.google.android.material.chip.Chip style="@style/Tick_Chip" />
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="8dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:contentPadding="0dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <com.google.android.material.chip.Chip style="@style/Tick_Chip" />
+                        </androidx.cardview.widget.CardView>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="8dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="8">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.5"
+                        android:foreground="#99FBD737"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/joker_circle_foreground" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/incredibles_circle_foreground" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/bladerunner_circle_foreground" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@mipmap/darkknight_circle_foreground" />
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"
+                        android:background="@color/hintColor">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Discover more"
+                            android:textColor="@color/grey_tv_time_bckgrnd"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New shoes and movies are waiting for you"
+                            android:textColor="@color/grey_tv_time_bckgrnd"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="@id/textView5"
+                            app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/linearlayout10"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="80"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:text="Trending movies"
+                    android:textColor="@color/grey_tv_time_bckgrnd"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="SEE ALL"
+                    android:textColor="#257CFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textView141"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Watched by"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/cardView31"
+                            app:layout_constraintTop_toTopOf="@id/cardView31" />
+
+                        <TextView
+                            android:id="@+id/textView151"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fidel Lim"
+                            app:layout_constraintStart_toStartOf="@id/textView141"
+                            app:layout_constraintTop_toBottomOf="@id/textView141" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView31"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="30dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cardView1">
+
+                            <ImageView
+                                android:id="@+id/imageView131"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            app:cardCornerRadius="8dp"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView121"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="#79000000"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView121"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="40dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="Vagabond"
+                                    android:textColor="@color/white"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="1 season . SBS (KR)"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip131"
+                                    style="@style/Widget.MaterialComponents.ChipGroup"
+                                    android:layout_width="70dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="100%"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:textColor="@color/hintColor"
+                                    app:chipBackgroundColor="#9A000000"
+                                    app:chipEndPadding="1dp"
+                                    app:chipIcon="@drawable/tv_time_logo_white_bckgrnd"
+                                    app:chipIconSize="14dp"
+                                    app:chipStartPadding="6dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip111"
+                                    style="@style/Plus_Chip"
+                                    android:layout_height="24dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip141"
+                            style="@style/Widget.MaterialComponents.ChipGroup"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="27dp"
+                            android:layout_marginStart="44dp"
+                            android:elevation="2dp"
+                            app:checkedIconVisible="false"
+                            app:chipBackgroundColor="#40D546"
+                            app:chipIcon="@drawable/ic_done_24px"
+                            app:chipIconSize="16dp"
+                            app:chipIconTint="#FFFFFF"
+                            app:chipStartPadding="0dp"
+                            app:layout_constraintBottom_toBottomOf="@id/cardView31"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textView142"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Watched by"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/cardView2"
+                            app:layout_constraintTop_toTopOf="@id/cardView2" />
+
+                        <TextView
+                            android:id="@+id/textView152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fidel Lim"
+                            app:layout_constraintStart_toStartOf="@id/textView142"
+                            app:layout_constraintTop_toBottomOf="@id/textView142" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView32"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="30dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cardView2">
+
+                            <ImageView
+                                android:id="@+id/imageView132"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            app:cardCornerRadius="8dp"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView122"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="#79000000"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/batman_superman_circle_foreground" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView122"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="40dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="Vagabond"
+                                    android:textColor="@color/white"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="1 season . SBS (KR)"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip132"
+                                    style="@style/Widget.MaterialComponents.ChipGroup"
+                                    android:layout_width="70dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="100%"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:textColor="@color/hintColor"
+                                    app:chipBackgroundColor="#9A000000"
+                                    app:chipEndPadding="1dp"
+                                    app:chipIcon="@drawable/tv_time_logo_white_bckgrnd"
+                                    app:chipIconSize="14dp"
+                                    app:chipStartPadding="6dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip112"
+                                    style="@style/Plus_Chip"
+                                    android:layout_height="24dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip142"
+                            style="@style/Widget.MaterialComponents.ChipGroup"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="27dp"
+                            android:layout_marginStart="44dp"
+                            android:elevation="2dp"
+                            app:checkedIconVisible="false"
+                            app:chipBackgroundColor="#40D546"
+                            app:chipIcon="@drawable/ic_done_24px"
+                            app:chipIconSize="16dp"
+                            app:chipIconTint="#FFFFFF"
+                            app:chipStartPadding="0dp"
+                            app:layout_constraintBottom_toBottomOf="@id/cardView32"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textView143"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Watched by"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/cardView33"
+                            app:layout_constraintTop_toTopOf="@id/cardView33" />
+
+                        <TextView
+                            android:id="@+id/textView153"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fidel Lim"
+                            app:layout_constraintStart_toStartOf="@id/textView143"
+                            app:layout_constraintTop_toBottomOf="@id/textView143" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView33"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="30dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cardView3">
+
+                            <ImageView
+                                android:id="@+id/imageView133"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            app:cardCornerRadius="8dp"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView123"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="#79000000"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/bladerunner_circle_foreground" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView123"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="40dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="Vagabond"
+                                    android:textColor="@color/white"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="1 season . SBS (KR)"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip133"
+                                    style="@style/Widget.MaterialComponents.ChipGroup"
+                                    android:layout_width="70dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="100%"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:textColor="@color/hintColor"
+                                    app:chipBackgroundColor="#9A000000"
+                                    app:chipEndPadding="1dp"
+                                    app:chipIcon="@drawable/tv_time_logo_white_bckgrnd"
+                                    app:chipIconSize="14dp"
+                                    app:chipStartPadding="6dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip113"
+                                    style="@style/Plus_Chip"
+                                    android:layout_height="24dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip143"
+                            style="@style/Widget.MaterialComponents.ChipGroup"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="27dp"
+                            android:layout_marginStart="44dp"
+                            android:elevation="2dp"
+                            app:checkedIconVisible="false"
+                            app:chipBackgroundColor="#40D546"
+                            app:chipIcon="@drawable/ic_done_24px"
+                            app:chipIconSize="16dp"
+                            app:chipIconTint="#FFFFFF"
+                            app:chipStartPadding="0dp"
+                            app:layout_constraintBottom_toBottomOf="@id/cardView3"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textView144"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Watched by"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/cardView34"
+                            app:layout_constraintTop_toTopOf="@id/cardView34" />
+
+                        <TextView
+                            android:id="@+id/textView154"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fidel Lim"
+                            app:layout_constraintStart_toStartOf="@id/textView144"
+                            app:layout_constraintTop_toBottomOf="@id/textView144" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView34"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="30dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cardView4">
+
+                            <ImageView
+                                android:id="@+id/imageView134"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            app:cardCornerRadius="8dp"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView124"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="#79000000"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/incredibles_circle_foreground" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView124"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="40dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="Vagabond"
+                                    android:textColor="@color/white"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="1 season . SBS (KR)"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip134"
+                                    style="@style/Widget.MaterialComponents.ChipGroup"
+                                    android:layout_width="70dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="100%"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:textColor="@color/hintColor"
+                                    app:chipBackgroundColor="#9A000000"
+                                    app:chipEndPadding="1dp"
+                                    app:chipIcon="@drawable/tv_time_logo_white_bckgrnd"
+                                    app:chipIconSize="14dp"
+                                    app:chipStartPadding="6dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip114"
+                                    style="@style/Plus_Chip"
+                                    android:layout_height="24dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip144"
+                            style="@style/Widget.MaterialComponents.ChipGroup"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="27dp"
+                            android:layout_marginStart="44dp"
+                            android:elevation="2dp"
+                            app:checkedIconVisible="false"
+                            app:chipBackgroundColor="#40D546"
+                            app:chipIcon="@drawable/ic_done_24px"
+                            app:chipIconSize="16dp"
+                            app:chipIconTint="#FFFFFF"
+                            app:chipStartPadding="0dp"
+                            app:layout_constraintBottom_toBottomOf="@id/cardView34"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textView145"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Watched by"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/cardView35"
+                            app:layout_constraintTop_toTopOf="@id/cardView35" />
+
+                        <TextView
+                            android:id="@+id/textView155"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fidel Lim"
+                            app:layout_constraintStart_toStartOf="@id/textView145"
+                            app:layout_constraintTop_toBottomOf="@id/textView145" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView35"
+                            android:layout_width="43dp"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="30dp"
+                            app:cardElevation="0dp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="false"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/cardView5">
+
+                            <ImageView
+                                android:id="@+id/imageView135"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/myhero_circle_foreground" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            app:cardCornerRadius="8dp"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:id="@+id/imageView125"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:foreground="#79000000"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView125"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="40dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="Vagabond"
+                                    android:textColor="@color/white"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:text="1 season . SBS (KR)"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip135"
+                                    style="@style/Widget.MaterialComponents.ChipGroup"
+                                    android:layout_width="70dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="100%"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:textColor="@color/hintColor"
+                                    app:chipBackgroundColor="#9A000000"
+                                    app:chipEndPadding="1dp"
+                                    app:chipIcon="@drawable/tv_time_logo_white_bckgrnd"
+                                    app:chipIconSize="14dp"
+                                    app:chipStartPadding="6dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chip115"
+                                    style="@style/Plus_Chip"
+                                    android:layout_height="24dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip145"
+                            style="@style/Widget.MaterialComponents.ChipGroup"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="27dp"
+                            android:layout_marginStart="44dp"
+                            android:elevation="2dp"
+                            app:checkedIconVisible="false"
+                            app:chipBackgroundColor="#40D546"
+                            app:chipIcon="@drawable/ic_done_24px"
+                            app:chipIconSize="16dp"
+                            app:chipIconTint="#FFFFFF"
+                            app:chipStartPadding="0dp"
+                            app:layout_constraintBottom_toBottomOf="@id/cardView35"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -52,10 +1179,10 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         app:elevation="5dp"
+        app:itemBackground="@color/white"
         app:itemIconTint="@drawable/nav_item_color_state"
         app:itemTextColor="@drawable/nav_item_color_state"
         app:labelVisibilityMode="labeled"
-        app:itemBackground="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
