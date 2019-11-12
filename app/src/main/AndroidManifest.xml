@@ -9,25 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Discover">
+        <activity android:name=".Stats"></activity>
+        <activity android:name=".Comments" />
+        <activity android:name=".Following" />
+        <activity android:name=".Followers" />
+        <activity android:name=".CustomerLists" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Notification" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".Discover" />
+        <activity android:name=".activity_shows_watch_list_unselected_page" />
+        <activity android:name=".ShowsWatchListDefaultPage" />
+        <activity android:name=".MoviesUpcoming" />
+        <activity android:name=".MoviesWatchList" />
+        <activity android:name=".UpcomingHomePage" />
+        <activity android:name=".Movies" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter></activity>
-        <activity android:name=".Movies" />
-        <activity android:name=".Profile" />
-        <activity android:name=".Login" />
-        <activity android:name=".ShowsWatchListDefaultPage" />
-        <activity android:name=".MoviesWatchList" />
-        <activity android:name=".MoviesUpcoming" />
-        <activity android:name=".UpcomingHomePage" />
-        <activity android:name=".activity_shows_watch_list_unselected_page"></activity>
-        <activity android:name=".Signup" />
-        <activity
-            android:name=".SplashScreen"
-            android:theme="@style/SplashTheme">
-
+            </intent-filter>
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

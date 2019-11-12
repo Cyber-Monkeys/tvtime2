@@ -10,7 +10,9 @@ import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.URLSpan;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 import java.util.Random;
 import java.util.Timer;
@@ -19,7 +21,7 @@ import java.util.TimerTask;
 public class Signup extends AppCompatActivity {
 
     //Variables
-    private ConstraintLayout background;
+    private ViewFlipper viewFlipper;
     private TextView termsAndCondition;
 
     @Override
@@ -27,7 +29,12 @@ public class Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        background = (ConstraintLayout) findViewById(R.id.background);
+        int images[] = {
+                R.drawable.daenerys, R.drawable.sherlock_holmes,
+                R.drawable.eleven,R.drawable.rick_grimes
+        };
+
+        viewFlipper = (ViewFlipper) findViewById(R.id.viewFlipper);
         termsAndCondition = (TextView) findViewById(R.id.termsAndConditionText);
         termsAndCondition.setMovementMethod(LinkMovementMethod.getInstance());
         if(termsAndCondition != null) {
@@ -35,11 +42,9 @@ public class Signup extends AppCompatActivity {
                     termsAndCondition.getText());
         }
 
-        Timer timer = new Timer();
-        MyTimer mT = new MyTimer();
-
-        timer.schedule(mT, 1000, 2000);
-
+        for(int image:images){
+            flipperImage(image);
+        }
     }
 
     //go back to mainActivity
@@ -51,32 +56,16 @@ public class Signup extends AppCompatActivity {
         startActivity(new Intent(this, ShowsWatchListDefaultPage.class));
     }
 
-    //Timer for auto-image slider
-    class MyTimer extends TimerTask{
+    public void flipperImage(int image){
+        ImageView imageView = new ImageView(this);
+        imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+        imageView.setImageResource(image);
 
-        @Override
-        public void run(){
-            runOnUiThread(new Runnable() {
+        viewFlipper.addView(imageView);
+        viewFlipper.setFlipInterval(3000);
+        viewFlipper.setAutoStart(true);
 
-                Random rand = new Random();
-
-                @Override
-                public void run() {
-                    int images[] = {
-                            R.drawable.daenerys, R.drawable.sherlock_holmes,
-                            R.drawable.eleven,R.drawable.rick_grimes
-                    };
-                    background.setBackgroundResource(images[getRandomNumber()]);
-
-                }
-
-                private int getRandomNumber(){
-                    return rand.nextInt(4);
-                }
-            });
-        }
     }
-
 }
 
 //Remove underlink in links

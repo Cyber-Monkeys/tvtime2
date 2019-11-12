@@ -18,17 +18,17 @@ public class ShowsWatchListDefaultPage extends AppCompatActivity {
 
     public void goToMovies(View view){
         startActivity(new Intent(this, MoviesWatchList.class));
-        CustomIntent.customType(this, "fadein-to-fadeout");
+        //CustomIntent.customType(this, "fadein-to-fadeout");
     }
 
     public void goToDiscover(View view){
         startActivity(new Intent(this, Discover.class));
-        CustomIntent.customType(this, "fadein-to-fadeout");
+        //CustomIntent.customType(this, "fadein-to-fadeout");
     }
 
     public void goToProfile(View view){
         startActivity(new Intent(this, Profile.class));
-        CustomIntent.customType(this, "fadein-to-fadeout");
+        //CustomIntent.customType(this, "fadein-to-fadeout");
     }
     public void menuPageUnselected(View V) {
         startActivity(new Intent(this, activity_shows_watch_list_unselected_page.class));
