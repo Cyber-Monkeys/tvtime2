@@ -129,7 +129,7 @@ public class Profile extends AppCompatActivity {
                         CustomIntent.customType(Profile.this, "fadein-to-fadeout");
                         break;
                     case R.id.action_movies:
-                        startActivity(new Intent(Profile.this, Movies.class));
+                        startActivity(new Intent(Profile.this, MoviesWatchList.class));
                         CustomIntent.customType(Profile.this, "fadein-to-fadeout");
                         break;
                     case R.id.action_discover:

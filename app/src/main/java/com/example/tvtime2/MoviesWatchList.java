@@ -23,7 +23,7 @@ public class MoviesWatchList extends AppCompatActivity {
         bottomNavigationMenu.clearAnimation();
 
         Menu menu = bottomNavigationMenu.getMenu();
-        MenuItem menuItem = menu.getItem(3);
+        MenuItem menuItem = menu.getItem(1);
         menuItem.setChecked(true);
 
         bottomNavigationMenu.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

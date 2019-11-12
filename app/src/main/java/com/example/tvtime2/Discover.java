@@ -36,7 +36,7 @@ public class Discover extends AppCompatActivity {
                         CustomIntent.customType(Discover.this, "fadein-to-fadeout");
                         break;
                     case R.id.action_movies:
-                        startActivity(new Intent(Discover.this, Movies.class));
+                        startActivity(new Intent(Discover.this, MoviesWatchList.class));
                         CustomIntent.customType(Discover.this, "fadein-to-fadeout");
                         break;
                     case R.id.action_discover:
