@@ -23,7 +23,7 @@ public class MoviesUpcoming extends AppCompatActivity {
         bottomNavigationMenu.clearAnimation();
 
         Menu menu = bottomNavigationMenu.getMenu();
-        MenuItem menuItem = menu.getItem(3);
+        MenuItem menuItem = menu.getItem(1);
         menuItem.setChecked(true);
 
         bottomNavigationMenu.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -51,5 +51,6 @@ public class MoviesUpcoming extends AppCompatActivity {
     }
     public void goToMoviesWatchListTab(View V) {
         startActivity(new Intent(this, MoviesWatchList.class));
+        CustomIntent.customType(this, "fadein-to-fadeout");
     }
 }

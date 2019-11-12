@@ -65,5 +65,6 @@ public class MoviesWatchList extends AppCompatActivity {
     }
     public void goToMoviesUpcomingTab(View V) {
         startActivity(new Intent(this, MoviesUpcoming.class));
+        CustomIntent.customType(this, "fadein-to-fadeout");
     }
 }
