@@ -69,7 +69,7 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="340dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/stats1"/>
 
@@ -87,13 +87,13 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="340dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/stats6"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="340dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/stats7"/>
 
