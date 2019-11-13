@@ -23,7 +23,6 @@
         <activity android:name=".MoviesUpcoming" />
         <activity android:name=".MoviesWatchList" />
         <activity android:name=".UpcomingHomePage" />
-        <activity android:name=".Movies" />
         <activity android:name=".Profile" />
         <activity android:name=".Login" />
         <activity android:name=".Signup" />
