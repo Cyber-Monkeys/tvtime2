@@ -57,6 +57,11 @@ public class UpcomingHomePage extends AppCompatActivity {
         CustomIntent.customType(this, "fadein-to-fadeout");
     }
 
+    public void goToShowsEpisodePage(View view){
+        startActivity(new Intent(this, tvShowEpisodes.class));
+        CustomIntent.customType(this, "fadein-to-fadeout");
+    }
+
     public void goToDiscover(View view){
         startActivity(new Intent(this, Discover.class));
         CustomIntent.customType(this, "fadein-to-fadeout");

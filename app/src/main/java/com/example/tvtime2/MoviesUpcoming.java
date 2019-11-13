@@ -54,4 +54,5 @@ public class MoviesUpcoming extends AppCompatActivity {
         startActivity(new Intent(this, MoviesWatchList.class));
         CustomIntent.customType(this, "fadein-to-fadeout");
     }
+
 }

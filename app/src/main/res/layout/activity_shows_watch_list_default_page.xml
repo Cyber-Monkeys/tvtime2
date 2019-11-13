@@ -101,6 +101,7 @@
                         android:layout_weight="1"
                         android:clipChildren="false"
                         android:focusableInTouchMode="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -112,8 +113,7 @@
                             android:focusable="auto"
                             android:focusableInTouchMode="true"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@mipmap/blueexorcist_foreground"
-                            />
+                            app:srcCompat="@mipmap/blueexorcist_foreground" />
 
                         <ProgressBar
                             style="?android:attr/progressBarStyleHorizontal"
@@ -131,6 +131,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -155,6 +156,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -188,6 +190,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -214,6 +217,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -237,6 +241,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -270,6 +275,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -295,6 +301,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -318,6 +325,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -350,6 +358,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -374,6 +383,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -387,6 +397,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="10dp">
@@ -427,6 +438,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -453,6 +465,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -477,6 +490,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">

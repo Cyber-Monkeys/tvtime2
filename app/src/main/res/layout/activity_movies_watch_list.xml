@@ -89,6 +89,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -105,6 +106,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -119,6 +121,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -142,6 +145,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -158,6 +162,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -172,6 +177,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -195,6 +201,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -211,6 +218,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -225,6 +233,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -248,6 +257,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -264,6 +274,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -278,6 +289,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="1.5dp"
                         android:paddingRight="10dp">
@@ -301,6 +313,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="10dp"
                         android:paddingRight="1.5dp">
@@ -317,6 +330,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp">
 
                         <ImageView
@@ -330,6 +344,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingBottom="6dp"
                         android:paddingLeft="3dp"
                         android:paddingRight="10dp">

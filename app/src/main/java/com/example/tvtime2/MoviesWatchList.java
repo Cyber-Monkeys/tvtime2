@@ -55,6 +55,10 @@ public class MoviesWatchList extends AppCompatActivity {
         startActivity(new Intent(this, Discover.class));
         CustomIntent.customType(this, "fadein-to-fadeout");
     }
+    public void goToShowsEpisodePage(View view){
+        startActivity(new Intent(this, tvShowEpisodes.class));
+        CustomIntent.customType(this, "fadein-to-fadeout");
+    }
 
     public void goToProfile(View view){
         startActivity(new Intent(this, Profile.class));

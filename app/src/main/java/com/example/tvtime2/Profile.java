@@ -148,7 +148,10 @@ public class Profile extends AppCompatActivity {
     public void goToHelpPage(View view){
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://tvtime.zendesk.com/hc/en-us")));
     }
-
+    public void goToShowsEpisodePage(View view){
+        startActivity(new Intent(this, tvShowEpisodes.class));
+        CustomIntent.customType(this, "fadein-to-fadeout");
+    }
     public void goToShare(View view){
         Intent i = new Intent(Intent.ACTION_SEND);
         i.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
