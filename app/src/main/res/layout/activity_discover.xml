@@ -101,7 +101,7 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@drawable/perks_of_being_a_wallflower" />
 
                             <com.google.android.material.chip.Chip style="@style/Tick_Chip" />
 
@@ -128,7 +128,7 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@mipmap/darkknight_circle_foreground" />
 
                             <com.google.android.material.chip.Chip style="@style/Plus_Chip" />
                         </androidx.cardview.widget.CardView>
@@ -153,7 +153,7 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@mipmap/bladerunner_circle_foreground" />
 
                             <com.google.android.material.chip.Chip style="@style/Plus_Chip" />
                         </androidx.cardview.widget.CardView>
@@ -178,7 +178,7 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@mipmap/joker_circle_foreground" />
 
                             <com.google.android.material.chip.Chip style="@style/Plus_Chip" />
                         </androidx.cardview.widget.CardView>
@@ -251,7 +251,7 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@mipmap/incredibles_circle_foreground" />
 
                             <com.google.android.material.chip.Chip style="@style/Tick_Chip" />
 
@@ -277,7 +277,7 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@drawable/your_name" />
 
                             <com.google.android.material.chip.Chip style="@style/Plus_Chip" />
 
@@ -303,7 +303,7 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@drawable/sherlock" />
 
                             <com.google.android.material.chip.Chip style="@style/Tick_Chip" />
                         </androidx.cardview.widget.CardView>
@@ -328,7 +328,7 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@drawable/house_of_cards_2" />
 
                             <com.google.android.material.chip.Chip style="@style/Tick_Chip" />
                         </androidx.cardview.widget.CardView>
@@ -521,7 +521,7 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@drawable/vikings" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
@@ -1093,7 +1093,7 @@
                                 android:layout_height="match_parent"
                                 android:foreground="#79000000"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@mipmap/assassination_circle_foreground" />
+                                app:srcCompat="@mipmap/moonlight_circle_foreground" />
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:layout_width="match_parent"

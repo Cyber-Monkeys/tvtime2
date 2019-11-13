@@ -40,7 +40,7 @@
     <style name="Plus_Chip" parent="Widget.MaterialComponents.ChipGroup">
         <item name="android:textSize">5sp</item>
         <item name="android:layout_width">24dp</item>
-        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_height">24dp</item>
         <item name="android:layout_gravity">end</item>
         <item name="android:layout_marginEnd">10dp</item>
         <item name="android:layout_marginTop">12dp</item>
