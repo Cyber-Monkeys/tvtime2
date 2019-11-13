@@ -504,7 +504,7 @@
                             app:cardPreventCornerOverlap="false"
                             app:cardUseCompatPadding="false"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/cardView1">
+                            app:layout_constraintTop_toBottomOf="@id/header">
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -515,7 +515,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/cardView1"
+                            android:id="@+id/header"
                             android:layout_width="match_parent"
                             android:layout_height="220dp"
                             app:cardCornerRadius="8dp"
