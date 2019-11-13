@@ -43,6 +43,7 @@ public class MoviesUpcoming extends AppCompatActivity {
                         break;
                     case R.id.action_profile:
                         startActivity(new Intent(MoviesUpcoming.this, Profile.class));
+                        CustomIntent.customType(MoviesUpcoming.this, "fadein-to-fadeout");
                         break;
                 }
                 return true;
