@@ -20,7 +20,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/topElement"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center"
@@ -54,7 +53,6 @@
         </LinearLayout>
 
         <ProgressBar
-            android:id="@+id/progressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="4dp"
@@ -66,7 +64,6 @@
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/centerlayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,16 +106,16 @@
                         android:paddingRight="1.5dp">
 
                         <ImageView
+                            style="@style/Widget.AppCompat.ActionButton"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:clickable="false"
                             android:focusable="auto"
                             android:focusableInTouchMode="true"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@mipmap/blueexorcist_foreground" />
+                            app:srcCompat="@mipmap/blueexorcist_foreground"
+                            />
 
                         <ProgressBar
-                            android:id="@+id/progressBar5"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -144,7 +141,6 @@
                             app:srcCompat="@mipmap/darkknight_foreground" />
 
                         <ProgressBar
-                            android:id="@+id/progressBar6"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -171,7 +167,6 @@
                             app:srcCompat="@mipmap/incredibles_foreground" />
 
                         <ProgressBar
-                            android:id="@+id/progressBar7"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -204,7 +199,6 @@
                             app:srcCompat="@mipmap/assassination_foreground" />
 
                         <ProgressBar
-                            android:id="@+id/progressBar2"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -229,7 +223,6 @@
                             app:srcCompat="@mipmap/batman_superman_foreground" />
 
                         <ProgressBar
-                            android:id="@+id/progressBar3"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -255,7 +248,6 @@
                             app:srcCompat="@mipmap/bladerunner_foreground" />
 
                         <ProgressBar
-                            android:id="@+id/progressBar4"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -289,7 +281,6 @@
                             app:srcCompat="@mipmap/joker_foreground" />
 
                         <ProgressBar
-                            android:id="@+id/progressBar8"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -313,7 +304,6 @@
                             app:srcCompat="@mipmap/moonlight_foreground" />
 
                         <ProgressBar
-                            android:id="@+id/progressBar9"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -339,7 +329,6 @@
                             app:srcCompat="@mipmap/myhero_foreground" />
 
                         <ProgressBar
-                            android:id="@+id/progressBar10"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -372,7 +361,6 @@
                             app:srcCompat="@mipmap/avengers_foreground" />
 
                         <ProgressBar
-                            android:id="@+id/progressBar11"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="109dp"
                             android:layout_height="4dp"
@@ -412,7 +400,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/bottomHeader"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="5"
@@ -516,7 +503,6 @@
         </ScrollView>
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip3"
             style="@style/Widget.MaterialComponents.ChipGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

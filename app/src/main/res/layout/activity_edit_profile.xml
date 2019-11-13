@@ -73,7 +73,6 @@
                     android:layout_weight="15">
 
                     <com.mikhaellopez.circularimageview.CircularImageView
-                        android:id="@+id/circular_image1"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:src="@drawable/sherlockholmes2"
@@ -402,7 +401,6 @@
                     android:text="Facebook"/>
 
                 <EditText
-                    android:id="@+id/editText3"
                     android:layout_weight="80"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"

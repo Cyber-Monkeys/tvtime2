@@ -19,7 +19,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:id="@+id/topElement"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:gravity="center"
@@ -53,7 +52,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
             </LinearLayout>
 
             <ProgressBar
-                android:id="@+id/progressBar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
@@ -65,7 +63,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
         </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/centerlayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +104,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/button76"
                                 style="@style/Widget.AppCompat.Button.Borderless"
                                 android:layout_width="46dp"
                                 android:layout_height="36dp"
@@ -128,7 +124,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:srcCompat="@mipmap/blue_exorcist_circle_foreground" />
 
                             <TextView
-                                android:id="@+id/textView106"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -140,7 +135,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:layout_constraintTop_toBottomOf="@+id/textView56" />
 
                             <TextView
-                                android:id="@+id/textView116"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+13"
@@ -196,7 +190,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/button75"
                                 style="@style/Widget.AppCompat.Button.Borderless"
                                 android:layout_width="46dp"
                                 android:layout_height="36dp"
@@ -217,7 +210,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:srcCompat="@mipmap/darkknight_circle_foreground" />
 
                             <TextView
-                                android:id="@+id/textView105"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -229,7 +221,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:layout_constraintTop_toBottomOf="@+id/textView55" />
 
                             <TextView
-                                android:id="@+id/textView115"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+13"
@@ -284,7 +275,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/button74"
                                 style="@style/Widget.AppCompat.Button.Borderless"
                                 android:layout_width="46dp"
                                 android:layout_height="36dp"
@@ -305,7 +295,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:srcCompat="@mipmap/incredibles_circle_foreground" />
 
                             <TextView
-                                android:id="@+id/textView104"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -317,7 +306,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:layout_constraintTop_toBottomOf="@+id/textView54" />
 
                             <TextView
-                                android:id="@+id/textView114"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+13"
@@ -363,7 +351,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                         android:gravity="center">
 
                         <com.google.android.material.chip.Chip
-                            android:id="@+id/chip24"
                             style="@style/Widget.MaterialComponents.ChipGroup"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -392,7 +379,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/button73"
                                 style="@style/Widget.AppCompat.Button.Borderless"
                                 android:layout_width="46dp"
                                 android:layout_height="36dp"
@@ -413,7 +399,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:srcCompat="@mipmap/assassination_circle_foreground" />
 
                             <TextView
-                                android:id="@+id/textView103"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -425,7 +410,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:layout_constraintTop_toBottomOf="@+id/textView53" />
 
                             <TextView
-                                android:id="@+id/textView113"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+13"
@@ -472,7 +456,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                         android:gravity="center">
 
                         <com.google.android.material.chip.Chip
-                            android:id="@+id/chip22"
                             style="@style/Widget.MaterialComponents.ChipGroup"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -499,7 +482,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/button72"
                                 style="@style/Widget.AppCompat.Button.Borderless"
                                 android:layout_width="46dp"
                                 android:layout_height="36dp"
@@ -520,7 +502,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:srcCompat="@mipmap/batman_superman_circle_foreground" />
 
                             <TextView
-                                android:id="@+id/textView102"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -532,7 +513,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
                             <TextView
-                                android:id="@+id/textView112"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+13"
@@ -588,7 +568,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/button71"
                                 style="@style/Widget.AppCompat.Button.Borderless"
                                 android:layout_width="46dp"
                                 android:layout_height="36dp"
@@ -609,7 +588,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:srcCompat="@mipmap/bladerunner_circle_foreground" />
 
                             <TextView
-                                android:id="@+id/textView101"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -621,7 +599,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:layout_constraintTop_toBottomOf="@+id/textView51" />
 
                             <TextView
-                                android:id="@+id/textView111"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+13"
@@ -669,7 +646,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                         android:gravity="center">
 
                         <com.google.android.material.chip.Chip
-                            android:id="@+id/chip229"
                             style="@style/Widget.MaterialComponents.ChipGroup"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -696,7 +672,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/button719"
                                 style="@style/Widget.AppCompat.Button.Borderless"
                                 android:layout_width="46dp"
                                 android:layout_height="36dp"
@@ -717,7 +692,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:srcCompat="@mipmap/joker_circle_foreground" />
 
                             <TextView
-                                android:id="@+id/textView1019"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -729,7 +703,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:layout_constraintTop_toBottomOf="@+id/textView519" />
 
                             <TextView
-                                android:id="@+id/textView1119"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+13"
@@ -785,7 +758,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                             android:layout_height="match_parent">
 
                             <Button
-                                android:id="@+id/button728"
                                 style="@style/Widget.AppCompat.Button.Borderless"
                                 android:layout_width="46dp"
                                 android:layout_height="36dp"
@@ -806,7 +778,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:srcCompat="@mipmap/moonlight_circle_foreground" />
 
                             <TextView
-                                android:id="@+id/textView1028"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="10dp"
@@ -818,7 +789,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
                                 app:layout_constraintTop_toBottomOf="@+id/textView528" />
 
                             <TextView
-                                android:id="@+id/textView1128"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="+13"
@@ -861,7 +831,6 @@ tools:context=".activity_shows_watch_list_unselected_page">
             </ScrollView>
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip3"
                 style="@style/Widget.MaterialComponents.ChipGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

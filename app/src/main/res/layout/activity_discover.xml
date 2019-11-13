@@ -22,7 +22,6 @@
             android:orientation="vertical">
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/chip7"
                 style="@style/Widget.MaterialComponents.ChipGroup"
                 android:layout_width="336dp"
                 android:layout_height="45dp"
@@ -189,7 +188,6 @@
             </HorizontalScrollView>
 
             <LinearLayout
-                android:id="@+id/linearlayout3"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:orientation="horizontal"
@@ -362,7 +360,6 @@
                         android:weightSum="5">
 
                         <ImageView
-                            android:id="@+id/imageView10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -370,7 +367,6 @@
                             app:srcCompat="@mipmap/joker_circle_foreground" />
 
                         <ImageView
-                            android:id="@+id/imageView9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -378,7 +374,6 @@
                             app:srcCompat="@mipmap/incredibles_circle_foreground" />
 
                         <ImageView
-                            android:id="@+id/imageView8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -386,7 +381,6 @@
                             app:srcCompat="@mipmap/bladerunner_circle_foreground" />
 
                         <ImageView
-                            android:id="@+id/imageView7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -394,7 +388,6 @@
                             app:srcCompat="@mipmap/assassination_circle_foreground" />
 
                         <ImageView
-                            android:id="@+id/imageView6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -422,7 +415,6 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
-                            android:id="@+id/textView10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="New shoes and movies are waiting for you"
@@ -495,7 +487,6 @@
                             app:layout_constraintTop_toTopOf="@id/cardView31" />
 
                         <TextView
-                            android:id="@+id/textView151"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Fidel Lim"
@@ -516,7 +507,6 @@
                             app:layout_constraintTop_toBottomOf="@id/cardView1">
 
                             <ImageView
-                                android:id="@+id/imageView131"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
@@ -532,7 +522,6 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
-                                android:id="@+id/imageView121"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:foreground="#79000000"
@@ -544,7 +533,6 @@
                                 android:layout_height="match_parent">
 
                                 <TextView
-                                    android:id="@+id/textView121"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="40dp"
@@ -568,7 +556,6 @@
                                     app:layout_constraintStart_toStartOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip131"
                                     style="@style/Widget.MaterialComponents.ChipGroup"
                                     android:layout_width="70dp"
                                     android:layout_height="28dp"
@@ -586,7 +573,6 @@
                                     app:layout_constraintEnd_toEndOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip111"
                                     style="@style/Plus_Chip"
                                     android:layout_height="24dp"
                                     app:layout_constraintEnd_toEndOf="parent"
@@ -596,7 +582,6 @@
                         </androidx.cardview.widget.CardView>
 
                         <com.google.android.material.chip.Chip
-                            android:id="@+id/chip141"
                             style="@style/Widget.MaterialComponents.ChipGroup"
                             android:layout_width="18dp"
                             android:layout_height="18dp"
@@ -634,7 +619,6 @@
                             app:layout_constraintTop_toTopOf="@id/cardView2" />
 
                         <TextView
-                            android:id="@+id/textView152"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Fidel Lim"
@@ -655,7 +639,6 @@
                             app:layout_constraintTop_toBottomOf="@id/cardView2">
 
                             <ImageView
-                                android:id="@+id/imageView132"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
@@ -671,7 +654,6 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
-                                android:id="@+id/imageView122"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:foreground="#79000000"
@@ -683,7 +665,6 @@
                                 android:layout_height="match_parent">
 
                                 <TextView
-                                    android:id="@+id/textView122"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="40dp"
@@ -707,7 +688,6 @@
                                     app:layout_constraintStart_toStartOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip132"
                                     style="@style/Widget.MaterialComponents.ChipGroup"
                                     android:layout_width="70dp"
                                     android:layout_height="28dp"
@@ -725,7 +705,6 @@
                                     app:layout_constraintEnd_toEndOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip112"
                                     style="@style/Plus_Chip"
                                     android:layout_height="24dp"
                                     app:layout_constraintEnd_toEndOf="parent"
@@ -735,7 +714,6 @@
                         </androidx.cardview.widget.CardView>
 
                         <com.google.android.material.chip.Chip
-                            android:id="@+id/chip142"
                             style="@style/Widget.MaterialComponents.ChipGroup"
                             android:layout_width="18dp"
                             android:layout_height="18dp"
@@ -773,7 +751,6 @@
                             app:layout_constraintTop_toTopOf="@id/cardView33" />
 
                         <TextView
-                            android:id="@+id/textView153"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Fidel Lim"
@@ -794,7 +771,6 @@
                             app:layout_constraintTop_toBottomOf="@id/cardView3">
 
                             <ImageView
-                                android:id="@+id/imageView133"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
@@ -810,7 +786,6 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
-                                android:id="@+id/imageView123"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:foreground="#79000000"
@@ -822,7 +797,6 @@
                                 android:layout_height="match_parent">
 
                                 <TextView
-                                    android:id="@+id/textView123"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="40dp"
@@ -846,7 +820,6 @@
                                     app:layout_constraintStart_toStartOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip133"
                                     style="@style/Widget.MaterialComponents.ChipGroup"
                                     android:layout_width="70dp"
                                     android:layout_height="28dp"
@@ -864,7 +837,6 @@
                                     app:layout_constraintEnd_toEndOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip113"
                                     style="@style/Plus_Chip"
                                     android:layout_height="24dp"
                                     app:layout_constraintEnd_toEndOf="parent"
@@ -874,7 +846,6 @@
                         </androidx.cardview.widget.CardView>
 
                         <com.google.android.material.chip.Chip
-                            android:id="@+id/chip143"
                             style="@style/Widget.MaterialComponents.ChipGroup"
                             android:layout_width="18dp"
                             android:layout_height="18dp"
@@ -912,7 +883,6 @@
                             app:layout_constraintTop_toTopOf="@id/cardView34" />
 
                         <TextView
-                            android:id="@+id/textView154"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Fidel Lim"
@@ -933,7 +903,6 @@
                             app:layout_constraintTop_toBottomOf="@id/cardView4">
 
                             <ImageView
-                                android:id="@+id/imageView134"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
@@ -949,7 +918,6 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
-                                android:id="@+id/imageView124"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:foreground="#79000000"
@@ -961,7 +929,6 @@
                                 android:layout_height="match_parent">
 
                                 <TextView
-                                    android:id="@+id/textView124"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="40dp"
@@ -985,7 +952,6 @@
                                     app:layout_constraintStart_toStartOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip134"
                                     style="@style/Widget.MaterialComponents.ChipGroup"
                                     android:layout_width="70dp"
                                     android:layout_height="28dp"
@@ -1003,7 +969,6 @@
                                     app:layout_constraintEnd_toEndOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip114"
                                     style="@style/Plus_Chip"
                                     android:layout_height="24dp"
                                     app:layout_constraintEnd_toEndOf="parent"
@@ -1013,7 +978,6 @@
                         </androidx.cardview.widget.CardView>
 
                         <com.google.android.material.chip.Chip
-                            android:id="@+id/chip144"
                             style="@style/Widget.MaterialComponents.ChipGroup"
                             android:layout_width="18dp"
                             android:layout_height="18dp"
@@ -1051,7 +1015,6 @@
                             app:layout_constraintTop_toTopOf="@id/cardView35" />
 
                         <TextView
-                            android:id="@+id/textView155"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Fidel Lim"
@@ -1072,7 +1035,6 @@
                             app:layout_constraintTop_toBottomOf="@id/cardView5">
 
                             <ImageView
-                                android:id="@+id/imageView135"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
@@ -1088,7 +1050,6 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
-                                android:id="@+id/imageView125"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:foreground="#79000000"
@@ -1100,7 +1061,6 @@
                                 android:layout_height="match_parent">
 
                                 <TextView
-                                    android:id="@+id/textView125"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="40dp"
@@ -1124,7 +1084,6 @@
                                     app:layout_constraintStart_toStartOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip135"
                                     style="@style/Widget.MaterialComponents.ChipGroup"
                                     android:layout_width="70dp"
                                     android:layout_height="28dp"
@@ -1142,7 +1101,6 @@
                                     app:layout_constraintEnd_toEndOf="parent" />
 
                                 <com.google.android.material.chip.Chip
-                                    android:id="@+id/chip115"
                                     style="@style/Plus_Chip"
                                     android:layout_height="24dp"
                                     app:layout_constraintEnd_toEndOf="parent"
@@ -1152,7 +1110,6 @@
                         </androidx.cardview.widget.CardView>
 
                         <com.google.android.material.chip.Chip
-                            android:id="@+id/chip145"
                             style="@style/Widget.MaterialComponents.ChipGroup"
                             android:layout_width="18dp"
                             android:layout_height="18dp"

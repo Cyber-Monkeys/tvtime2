@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:android2="http://schemas.android.com/apk/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +8,6 @@
 
 
     <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
@@ -646,7 +644,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
 
             <Button
-                android:id="@+id/setting_button"
                 android:layout_width="130dp"
                 android:layout_height="35dp"
                 android:layout_marginTop="15dp"
