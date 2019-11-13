@@ -63,13 +63,6 @@
 
     </LinearLayout>
 
-<!--    <FrameLayout-->
-<!--        android:id="@+id/centerlayout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="620dp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/TopBar">-->
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -351,8 +344,6 @@
 
             </LinearLayout>
         </ScrollView>
-
-<!--    </FrameLayout>-->
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
