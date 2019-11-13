@@ -92,6 +92,7 @@
         android:layout_marginTop="32dp"
         android:background="@drawable/btn_signup_gradient_bottom_border"
         android:onClick="goToHomePage"
+        android:shadowColor="#00BDBDBD"
         android:text="Sign in"
         android:textAllCaps="false"
         android:textColor="#646464"
