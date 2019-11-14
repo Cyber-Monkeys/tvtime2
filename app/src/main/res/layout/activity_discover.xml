@@ -84,6 +84,7 @@
                     <FrameLayout
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="5dp"
                         android:paddingStart="10dp">
 
@@ -111,6 +112,7 @@
                     <FrameLayout
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="5dp">
 
                         <androidx.cardview.widget.CardView
@@ -137,6 +139,7 @@
                     <FrameLayout
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="5dp">
 
                         <androidx.cardview.widget.CardView
@@ -162,6 +165,7 @@
                     <FrameLayout
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="5dp">
 
                         <androidx.cardview.widget.CardView
@@ -232,6 +236,7 @@
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
                         android:clickable="true"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="5dp"
                         android:paddingStart="10dp">
 
@@ -260,6 +265,7 @@
                     <FrameLayout
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="5dp">
 
                         <androidx.cardview.widget.CardView
@@ -286,6 +292,7 @@
                     <FrameLayout
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="5dp">
 
                         <androidx.cardview.widget.CardView
@@ -311,6 +318,7 @@
                     <FrameLayout
                         android:layout_width="170dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="5dp">
 
                         <androidx.cardview.widget.CardView
@@ -341,6 +349,7 @@
                 android:layout_height="170dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
+                android:onClick="goToShowsEpisodePage"
                 app:cardCornerRadius="8dp"
                 app:cardPreventCornerOverlap="false"
                 app:cardUseCompatPadding="false">
@@ -471,6 +480,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="10dp"
                         android:paddingStart="10dp">
 
@@ -603,6 +613,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="10dp"
                         android:paddingStart="10dp">
 
@@ -735,6 +746,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="10dp"
                         android:paddingStart="10dp">
 
@@ -867,6 +879,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="10dp"
                         android:paddingStart="10dp">
 
@@ -999,6 +1012,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
+                        android:onClick="goToShowsEpisodePage"
                         android:paddingEnd="10dp"
                         android:paddingStart="10dp">
 

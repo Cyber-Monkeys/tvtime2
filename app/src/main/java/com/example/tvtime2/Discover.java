@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -50,5 +51,9 @@ public class Discover extends AppCompatActivity {
                 return true;
             }
         });
+    }
+    public void goToShowsEpisodePage(View view){
+        startActivity(new Intent(this, tvShowEpisodes.class));
+        CustomIntent.customType(this, "fadein-to-fadeout");
     }
 }
