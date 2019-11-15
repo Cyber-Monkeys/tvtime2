@@ -8,10 +8,10 @@
     tools:context=".Signup">
 
     <ViewFlipper
+        android:id="@+id/viewFlipper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:id="@+id/viewFlipper"/>
+        android:adjustViewBounds="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,9 +32,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="252dp"
         android:layout_marginTop="460dp"
+        android:layout_marginEnd="80dp"
         android:text="Faster setup"
         android:textColor="#4FE455"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/viewFlipper"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,12 +44,15 @@
         android:id="@+id/linearLayout2"
         android:layout_width="250dp"
         android:layout_height="45dp"
+        android:layout_marginStart="82dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="79dp"
         android:background="@drawable/btn_login_facebook_gradient"
         android:onClick="goBack"
         android:orientation="horizontal"
         android:weightSum="1"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="@+id/viewFlipper"
+        app:layout_constraintStart_toStartOf="@+id/viewFlipper"
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <TextView
