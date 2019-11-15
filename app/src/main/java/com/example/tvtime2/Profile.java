@@ -51,26 +51,26 @@ public class Profile extends AppCompatActivity {
                 R.drawable.joker, R.drawable.avengers_end_game, R.drawable.add_to_list
         };
 
-        question_mark = (TextView) findViewById(R.id.question_mark_text);
+        question_mark = findViewById(R.id.question_mark_text);
         Typeface font = Typeface.createFromAsset(getAssets(), "fonts/fa-solid-900.ttf"); //question_mark
         question_mark.setTypeface(font);
         question_mark.setText("\uf128");
 
-        bell = (TextView) findViewById(R.id.bell_text);
+        bell = findViewById(R.id.bell_text);
         Typeface font2 = Typeface.createFromAsset(getAssets(), "fonts/fa-regular-400.ttf"); //bell
         bell.setTypeface(font2);
         bell.setText("\uf0f3");
 
-        share = (TextView) findViewById(R.id.share_text);
+        share = findViewById(R.id.share_text);
         Typeface font3 = Typeface.createFromAsset(getAssets(), "fonts/fa-solid-900.ttf"); //share
         share.setTypeface(font3);
         share.setText("\uf14d");
 
-        greater_than = (TextView) findViewById(R.id.greater_than);
-        greater_than2 = (TextView) findViewById(R.id.greater_than2);
-        greater_than3 = (TextView) findViewById(R.id.greater_than3);
-        greater_than4 = (TextView) findViewById(R.id.greater_than4);
-        greater_than5 = (TextView) findViewById(R.id.greater_than5);
+        greater_than = findViewById(R.id.greater_than);
+        greater_than2 = findViewById(R.id.greater_than2);
+        greater_than3 = findViewById(R.id.greater_than3);
+        greater_than4 = findViewById(R.id.greater_than4);
+        greater_than5 = findViewById(R.id.greater_than5);
         Typeface font4 = Typeface.createFromAsset(getAssets(), "fonts/fa-solid-900.ttf"); //greater than
         greater_than.setTypeface(font4);
         greater_than.setText("\uf531");
@@ -88,32 +88,32 @@ public class Profile extends AppCompatActivity {
         profileInfoArrayList.add(new ProfileInfo("MOVIE Time", "01      04      18", "months            days               hours  "));
         profileInfoArrayList.add(new ProfileInfo("MOVIES WATCHED", "455", ""));
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView.setAdapter(new HorizontalAdapter(profileInfoArrayList));
 
-        RecyclerView recyclerView2 = (RecyclerView) findViewById(R.id.recyclerView2);
+        RecyclerView recyclerView2 = findViewById(R.id.recyclerView2);
         recyclerView2.setNestedScrollingEnabled(false);
         recyclerView2.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView2.setAdapter(new HorizontalAdapterImage(shows));
 
-        RecyclerView recyclerView3 = (RecyclerView) findViewById(R.id.recyclerView3);
+        RecyclerView recyclerView3 = findViewById(R.id.recyclerView3);
         recyclerView3.setNestedScrollingEnabled(false);
         recyclerView3.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView3.setAdapter(new HorizontalAdapterImage(favoriteShows));
 
-        RecyclerView recyclerView4 = (RecyclerView) findViewById(R.id.recyclerView4);
+        RecyclerView recyclerView4 = findViewById(R.id.recyclerView4);
         recyclerView4.setNestedScrollingEnabled(false);
         recyclerView4.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView4.setAdapter(new HorizontalAdapterImage(movies));
 
-        RecyclerView recyclerView5 = (RecyclerView) findViewById(R.id.recyclerView5);
+        RecyclerView recyclerView5 = findViewById(R.id.recyclerView5);
         recyclerView5.setNestedScrollingEnabled(false);
         recyclerView5.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         recyclerView5.setAdapter(new HorizontalAdapterImage(favoriteMovies));
 
-        BottomNavigationView bottomNavigationMenu = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigationMenu = findViewById(R.id.bottom_navigation);
         bottomNavigationMenu.clearAnimation();
 
         Menu menu = bottomNavigationMenu.getMenu();

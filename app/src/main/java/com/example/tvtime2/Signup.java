@@ -29,13 +29,13 @@ public class Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        int images[] = {
+        int[] images = {
                 R.drawable.daenerys, R.drawable.sherlock_holmes,
-                R.drawable.eleven,R.drawable.rick_grimes
+                R.drawable.eleven, R.drawable.rick_grimes
         };
 
-        viewFlipper = (ViewFlipper) findViewById(R.id.viewFlipper);
-        termsAndCondition = (TextView) findViewById(R.id.termsAndConditionText);
+        viewFlipper = findViewById(R.id.viewFlipper);
+        termsAndCondition = findViewById(R.id.termsAndConditionText);
         termsAndCondition.setMovementMethod(LinkMovementMethod.getInstance());
         if(termsAndCondition != null) {
             StringUtil.stripUnderlines((Spannable) //Remove underline in links

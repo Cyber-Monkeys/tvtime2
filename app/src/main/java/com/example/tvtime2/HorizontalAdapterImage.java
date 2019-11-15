@@ -38,7 +38,7 @@ public class HorizontalAdapterImage extends RecyclerView.Adapter<HorizontalAdapt
 
         public HorizontalViewHolder(View itemView){
             super(itemView);
-            txt = (ImageView) itemView.findViewById(R.id.shows_image);
+            txt = itemView.findViewById(R.id.shows_image);
 
         }
     }

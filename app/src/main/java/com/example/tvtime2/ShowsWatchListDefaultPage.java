@@ -21,7 +21,7 @@ public class ShowsWatchListDefaultPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shows_watch_list_default_page);
 
-        BottomNavigationView bottomNavigationMenu = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigationMenu = findViewById(R.id.bottom_navigation);
         bottomNavigationMenu.clearAnimation();
 
         Menu menu = bottomNavigationMenu.getMenu();

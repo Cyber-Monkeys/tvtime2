@@ -20,7 +20,7 @@ public class UpcomingHomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upcoming_home_page);
 
-        BottomNavigationView bottomNavigationMenu = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigationMenu = findViewById(R.id.bottom_navigation);
         bottomNavigationMenu.clearAnimation();
 
         Menu menu = bottomNavigationMenu.getMenu();

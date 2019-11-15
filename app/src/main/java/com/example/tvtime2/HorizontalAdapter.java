@@ -45,9 +45,9 @@ public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.Ho
 
         public HorizontalViewHolder(View itemView){
             super(itemView);
-            txt = (TextView) itemView.findViewById(R.id.textView);
-            txt2 = (TextView) itemView.findViewById(R.id.textView2);
-            txt3 = (TextView) itemView.findViewById(R.id.textView3);
+            txt = itemView.findViewById(R.id.textView);
+            txt2 = itemView.findViewById(R.id.textView2);
+            txt3 = itemView.findViewById(R.id.textView3);
 
         }
     }

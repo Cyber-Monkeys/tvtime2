@@ -2,6 +2,7 @@ package com.example.tvtime2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -21,7 +22,7 @@ public class Notification extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
 
-        listView = (ListView) findViewById(R.id.listView);
+        listView = findViewById(R.id.listView);
         listView.setElevation(3);
 
         notificationInfoArrayList.add(new NotificationInfo(R.drawable.vagabond,"You have just unlocked the Vagabond (2019) Quick Watcher badge!","1d"));
@@ -38,7 +39,7 @@ public class Notification extends AppCompatActivity {
         notificationInfoArrayList.add(new NotificationInfo(R.drawable.ballers,"You have just unlocked the Godzilla (2019) Quick Watcher badge!","8d"));
         notificationInfoArrayList.add(new NotificationInfo(R.drawable.dr_stone,"You have just unlocked the Friends (1994) Quick Watcher badge!","20d"));
 
-        LayoutInflater inflater = (LayoutInflater) this.getSystemService(this.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         //Add headerview for listview
         View headeView = inflater.inflate(R.layout.notification_button_view, null, false);
         listView.addHeaderView(headeView);

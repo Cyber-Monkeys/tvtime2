@@ -41,9 +41,9 @@ public class NotificationInfoAdapter extends ArrayAdapter<NotificationInfo> {
             convertView = inflater.inflate(mResource, parent, false);
         }
 
-        ImageView tvPhoto = (ImageView) convertView.findViewById(R.id.imageView);
-        TextView tvAccomplishment = (TextView) convertView.findViewById(R.id.textView2);
-        TextView tvDay = (TextView) convertView.findViewById(R.id.textView3);
+        ImageView tvPhoto = convertView.findViewById(R.id.imageView);
+        TextView tvAccomplishment = convertView.findViewById(R.id.textView2);
+        TextView tvDay = convertView.findViewById(R.id.textView3);
 
         tvPhoto.setImageResource(photo);
         tvAccomplishment.setText(accomplishment);
