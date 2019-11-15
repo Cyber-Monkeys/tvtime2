@@ -66,6 +66,7 @@
                     android:text="SEE ALL"
                     android:textColor="#257CFF"
                     android:textSize="12sp"
+                    android:onClick="goToMoviesWatchList"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -217,6 +218,7 @@
                     android:text="SEE ALL"
                     android:textColor="#257CFF"
                     android:textSize="12sp"
+                    android:onClick="goToMoviesWatchList"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -464,6 +466,7 @@
                     android:text="SEE ALL"
                     android:textColor="#257CFF"
                     android:textSize="12sp"
+                    android:onClick="goToMoviesWatchList"
                     android:textStyle="bold" />
 
             </LinearLayout>
