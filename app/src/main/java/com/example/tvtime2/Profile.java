@@ -173,10 +173,12 @@ public class Profile extends AppCompatActivity {
 
     public void goToShowsDefault(View view){
         startActivity(new Intent(Profile.this, ShowsWatchListDefaultPage.class));
+        CustomIntent.customType(Profile.this, "fadein-to-fadeout");
     }
 
     public void goToMoviesWatchList(View view){
         startActivity(new Intent(Profile.this, MoviesWatchList.class));
+        CustomIntent.customType(Profile.this, "fadein-to-fadeout");
     }
 
     public void goToCustomLists(View view){

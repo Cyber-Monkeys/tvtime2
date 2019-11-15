@@ -56,4 +56,9 @@ public class Discover extends AppCompatActivity {
         startActivity(new Intent(this, tvShowEpisodes.class));
         CustomIntent.customType(this, "fadein-to-fadeout");
     }
+
+    public void goToMoviesWatchList(View view){
+        startActivity(new Intent(this, MoviesWatchList.class));
+        CustomIntent.customType(this, "fadein-to-fadeout");
+    }
 }
